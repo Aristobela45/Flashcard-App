@@ -56,8 +56,8 @@ function CreateDeck({ updateDecks }) {
             </nav>
 
             {/* a form for the following content */}
-            <form
-                onSubmit={submitForm}>
+            <form>
+
 
                 {/* a text input for the card deck's name */}
                 <div className="form-group">
@@ -103,7 +103,8 @@ function CreateDeck({ updateDecks }) {
 
                 {/* a button for submitted the deck */}
                 <button
-                    type="submit"
+
+                    onClick={submitForm}
                     className="btn btn-primary">
                     Submit
                 </button>
